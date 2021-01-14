@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="2dp"
+    android:background="#F8E2A1"
+    android:paddingBottom="2dp">
+
+    <TextView
+        android:id="@+id/tv_codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/tvl_descricao"
+        android:layout_width="66dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="4dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_codigo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_codigo"
+        tools:text="Descrição:" />
+
+    <TextView
+        android:id="@+id/tvl_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_codigo"
+        app:layout_constraintTop_toBottomOf="@+id/tvl_descricao"
+        tools:text="Data:" />
+
+    <TextView
+        android:id="@+id/tv_descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:fontFamily="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvl_descricao"
+        app:layout_constraintStart_toStartOf="@+id/tvl_descricao"
+        tools:text="Aluguel" />
+
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvl_data"
+        app:layout_constraintStart_toStartOf="@+id/tv_descricao"
+        tools:text="14/01/2021" />
+
+    <TextView
+        android:id="@+id/tvl_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_codigo"
+        app:layout_constraintTop_toBottomOf="@+id/tvl_data"
+        tools:text="Valor:" />
+
+    <TextView
+        android:id="@+id/tv_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvl_valor"
+        app:layout_constraintStart_toStartOf="@+id/tv_data"
+        tools:text="1000,00" />
+
+    <TextView
+        android:id="@+id/tv_creddebi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_valor"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="C" />
+</androidx.constraintlayout.widget.ConstraintLayout>
