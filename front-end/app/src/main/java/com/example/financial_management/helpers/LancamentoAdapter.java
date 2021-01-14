@@ -40,7 +40,7 @@ public class LancamentoAdapter extends RecyclerView.Adapter<LancamentoAdapter.La
         holder.data.setText(lista.get(position).getData().toString());
         holder.valor.setText(lista.get(position).getValor().toString());
         //Double val = Double.parseDouble(holder.valor.getText().toString());
-        int cor = holder.tipo.getText().toString() == "C" ? Color.parseColor("#F8F5F5") : Color.parseColor("#F8E2A1");
+        int cor = lista.get(position).getTipo().toString().equals("C") ? Color.parseColor("#F8F5F5") : Color.parseColor("#F8E2A1");
         holder.itemView.setBackgroundColor(cor);
     }
 
